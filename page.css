@@ -1,0 +1,292 @@
+body {
+    margin: 0;
+}
+
+.maincontent {
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.brandname {
+    height: 250px;
+    width: 400px;
+    transform: translateY(-70px);
+
+}
+
+.navbar {
+    margin-top: 50px;
+    transform: translateX(-50px);
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 100px;
+    transition: all 0.3s;
+}
+
+a:hover {
+    color: #ffd60a;
+    font-size: 1.3rem;
+    border-bottom: 5px solid #ffd60a;
+    padding-bottom: 8px;
+
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.introwritten {
+    width: 600px;
+    height: 300px;
+    margin-left: 70px;
+    position: relative;
+    bottom: 50px;
+    animation-name: slidein, fadein;
+    animation-duration: 2s, 2s;
+    animation-iteration-count: 1, 1;
+}
+
+@keyframes slidein {
+    from {
+        transform: translateX(-100px);
+
+    }
+
+    to {
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+.img2 {
+    width: 600px;
+    height: 600px;
+    transform: scale(1);
+    position: relative;
+    bottom: 50px;
+    animation-name: slidein1, fadein1;
+    animation-duration: 2s, 2s;
+    animation-iteration-count: 1, 1;
+}
+
+@keyframes slidein1 {
+    from {
+        transform: translateX(100px);
+
+    }
+
+    to {
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes fadein1 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+.heading1 {
+    font-size: 4rem;
+    color: #d62828;
+}
+
+.button1 {
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: #d62828;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #ffd60a;
+    margin-top: 20px;
+    text-transform: capitalize;
+    transition: 0.3s;
+
+}
+
+.button1:hover {
+    outline: 5px solid #d62828;
+    outline-offset: 5px;
+    transform: scale(0.8);
+}
+/* Mobile Styles */
+
+@media screen and (max-width: 767px) {
+
+    /* Navbar */
+  
+    .nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar {
+      margin-top: 20px;
+      transform: none;
+    }
+  
+    .brandname {
+      height: auto;
+      width: 200px;
+      transform: none;
+    }
+  
+    a {
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+  
+    /* Intro Section */
+  
+    .intro {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .introwritten {
+      width: 90%;
+      height: auto;
+      margin: 20px 0;
+      position: static;
+      animation: none;
+    }
+  
+    .img2 {
+      width: 90%;
+      height: auto;
+      margin: 20px 0;
+      position: static;
+      animation: none;
+    }
+  
+    .heading1 {
+      font-size: 2rem;
+    }
+  
+    .button1 {
+      margin-top: 20px;
+      font-size: 1rem;
+    }
+  
+  }
+  
+  /* Tablet Styles */
+  
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+  
+    /* Navbar */
+  
+    .navbar {
+      margin-top: 30px;
+      transform: none;
+    }
+  
+    .brandname {
+      height: auto;
+      width: 250px;
+      transform: none;
+    }
+  
+    a {
+      margin: 10px;
+      font-size: 1rem;
+    }
+  
+    /* Intro Section */
+  
+    .introwritten {
+      width: 70%;
+      height: auto;
+      margin: 40px 0;
+      position: static;
+      animation: none;
+    }
+  
+    .img2 {
+      width: 70%;
+      height: auto;
+      margin: 40px 0;
+      position: static;
+      animation: none;
+    }
+  
+    .heading1 {
+      font-size: 3rem;
+    }
+  
+    .button1 {
+      margin-top: 40px;
+      font-size: 1.2rem;
+    }
+  
+  }
+  
+  /* Desktop Styles */
+  
+  @media screen and (min-width: 992px) {
+  
+    /* Navbar */
+  
+    a {
+      margin: 0 20px;
+      font-size: 1.2rem;
+    }
+  
+    /* Intro Section */
+  
+    .introwritten {
+      width: 50%;
+      height: auto;
+      margin: 100px 0 50px 50px;
+      position: relative;
+      bottom: 50px;
+      animation-name: slidein, fadein;
+      animation-duration: 2s, 2s;
+      animation-iteration-count: 1, 1;
+    }
+  
+    .img2 {
+      width: 50%;
+      height: auto;
+      margin: 0 50px 50px 0;
+      position: relative;
+      bottom: 50px;
+      animation-name: slidein1, fadein1;
+      animation-duration: 2s, 2s;
+      animation-iteration-count: 1, 1;
+    }
+  
+  }
+  

@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+
+}
+h1{
+    text-align: center;
+    color: rgb(234, 19, 19);
+    
+    background-color: aqua;
+
+}
+nav{
+    background-color: rgb(18, 230, 74);
+    display: grid;
+    place-items: center;
+
+}
+nav ul{
+    list-style-type:none;
+}
+nav ul a{
+    display: inline-block;
+    padding: 20px;
+    transition: 0.2s ease-in;
+    color: #000;
+    font-size: 18px;
+}
+nac ul a:hover{
+    background-color: chartreuse;
+    color: darksalmon;
+
+}
+.h4{
+    padding: 5px 30px;
+    text-align: left;
+}
+.item button{
+    padding:5px 30px;
+    background-color: forestgreen;
+    color: aliceblue;
+    cursor:pointer;
+    border-radius: 4px;
+}

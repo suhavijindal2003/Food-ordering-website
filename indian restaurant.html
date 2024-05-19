@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Menu</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 0;
+            padding-top: 20px;
+        }
+        
+        .items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px 20px;
+        }
+        
+        .item {
+            background-color: #fff;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .item:hover {
+            transform: scale(1.05);
+        }
+        
+        .item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        
+        .item h4 {
+            margin: 10px;
+            font-size: 18px;
+            text-align: center;
+            color: #333;
+        }
+        
+        .item button {
+            display: block;
+            margin: 10px auto;
+            padding: 5px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+        
+        .item button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Indian Menu</h1>
+    <section class="items">
+        <div class="item">
+            <img src="dosa.jpg">
+            <h4>Dosa &#8377;150</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="chaat.jpg">
+            <h4>Chaat &#8377;50</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="gol gappe.jpg">
+            <h4>Gol Gappe &#8377;50</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="naan.jpg">
+            <h4>Naan &#8377;50</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="paneer.jpg">
+            <h4>Paneer Tikka &#8377;300</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="pav.jpg">
+            <h4>Pav Bhaji &#8377;100</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="vada.jpg">
+            <h4>Vada Pav &#8377;50</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="thali.jpg">
+            <h4>Indian Special Thali &#8377;300</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="Chole_bhature.jpg">
+            <h4>Chole Bhature &#8377;200</h4>
+            <button>Order</button>
+        </div>
+    </section>
+</body>
+</html>
